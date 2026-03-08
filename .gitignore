@@ -8,6 +8,9 @@
 # Terraform working directory
 .terraform/
 
+# Terraform lock file (local only)
+.terraform.lock.hcl
+
 # Terraform CLI config
 .terraformrc
 terraform.rc
@@ -23,6 +26,19 @@ terraform.rc
 .env
 *.env
 
+# IDE files (IntelliJ/PyCharm/VSCode)
+.idea/
+.idea/**/*
+.vscode/
+.vscode/**/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -31,3 +47,13 @@ terraform.rc
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Docker
+.dockerignore
+
+# Logs
+*.log
+
+# Database
+db/
+db.sqlite*
